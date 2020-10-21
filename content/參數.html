@@ -133,13 +133,34 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content"> <a href='課堂內容.html'>Next</a> >> 課堂內容<br /><h1>簡介</h1>
-<p><span>四設計二甲-40823108-高宇哲</span></p>
-<p><span>倉儲: </span><a href="https://github.com/40823108/cad2020">cad2020倉儲</a></p>
-<p><span>Youtube: </span><a href="https://www.youtube.com/channel/UCd3WMYoS7LQ5-Yh1u7gXbpA/featured">鯊魚先生</a>||<a href="https://www.youtube.com/channel/UCXX82YSKAQQHUCVRLOIs-bg">雙劍魚先生</a>||<a href="https://www.youtube.com/channel/UCO9QPBM1GZGIoPbfL_zjRjw">仙子魚先生</a>||<a href="https://www.youtube.com/channel/UC_Otpnico_3aSyDmowCUGyg">虎斑貓先生</a>||<a href="https://www.youtube.com/channel/UCiADs8ujLZRPFNU6lo-s8cg">槍蝦先生</a>||<a href="https://www.youtube.com/channel/UCrqCRSk-Goa_pDQGqy_0kaQ">公雞先生</a>||<a href="https://40823120.github.io/cad2020/content/index.html">銀狐先生</a>||<a href="https://www.youtube.com/channel/UCDwHWerqlhllVN1FmKCBYJg">瘟疫先生</a></p>
-<p>||<a href="https://www.youtube.com/channel/UCtda0-EMG4-rTUBPlOP1B6A">盤子先生<span>||</span></a><a href="https://www.youtube.com/channel/UCrE2e1nyzC-se_epKdsDxkQ">火雞先生</a></p>
-<p><span><img alt="" height="555" src="./../images/29bf8388-c7d0-4fdd-9465-f78487723107.jpg" width="555"/></span></p>
-<p></p><br /> <a href='課堂內容.html'>Next</a> >> 課堂內容</div>
+    <div id="tipue_search_content">Inventor API << <a href='Inventor API.html'>Previous</a> <br /><h1>參數</h1>
+<p>Inventor 在建立零件與組合模型的過程中會帶入許多"參數"</p>
+<p><img alt="" height="338" src="./../images/參數1.JPG" width="336"/></p>
+<p>這些參數在模型檔案中會被整合在"參數表中", 如下圖:</p>
+<p><img alt="" height="696" src="./../images/參數2.JPG" width="1237"/></p>
+<p><img alt="" height="280" src="./../images/參數3.JPG" width="639"/></p>
+<p>如上圖, 有各種參數屬性, 以下逐項介紹:</p>
+<p><strong>模型參數:</strong></p>
+<p>為使用者在繪製物件時所自動加入的參數</p>
+<p>模型參數從d0~dn項, 都是在建立幾何的過程中Inventor自動產生的</p>
+<p><strong>使用者參數:</strong></p>
+<p>為使用自行加入的條件與尺寸或者方程式</p>
+<p><strong>使用者:</strong></p>
+<p>會列出影響到參數的幾何-約束-特徵-草圖等等, 除非該指令無影響到參數</p>
+<p><strong>單位類型:</strong></p>
+<p>在"模型參數"中，Inventor 會自動根據使用者使用的尺寸標註方式選擇長度 (mm) 或者是角度 (deg) 單位，另外會用到如配合陣列數量的無單位(ul)<br/>單位類型如下:</p>
+<p><img alt="" height="421" src="./../images/參數4.JPG" width="388"/></p>
+<p><strong>方程式:</strong></p>
+<p>最常使用的就是直接將"常數"填入使其做計算,也可以直接鍵入方程式, 最後由標稱值欄位顯示結果</p>
+<p><b>標稱值:</b></p>
+<p>如果方程式欄位中為"常數"此欄會直接顯示常數<br/>如果方程式欄位中為"方程式"此欄會將方程式做計算最後顯示結果</p>
+<p><strong>公釐:</strong></p>
+<p style="text-align: left;"><img alt="" height="452" src="./../images/參數5.JPG" width="1031"/><br/><br/>紅色"負號"表示使用下限作為模型值<br/>藍色"加號"表示使用上限作為模型值<br/>綠色"三角"表示用中間值作為模型值<br/>黃色"圓環"表示用標稱值作為模型值</p>
+<p><strong>模型值:</strong></p>
+<p>標稱值加上公差設定的計算結果, 惠珍的套用到模型中改變尺寸</p>
+<p><strong>註釋:</strong></p>
+<p>可以加上參數的用途說明</p>
+<p></p><br />Inventor API << <a href='Inventor API.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
