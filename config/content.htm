@@ -172,7 +172,7 @@
 <p>    介面:手機</p>
 <p><img alt="" height="545" src="/images/api.png" width="838"/></p>
 <h2>W6</h2>
-<h1>Inventor API</h1>
+<p>如何使用API控制Solidworks與Inevntor繪製模型, 並同時將各模型之體積與圖片匯入.html檔, 使其能在網頁中瀏覽各模型之變化</p><h1>Inventor API</h1>
 <p>此為參考<a href="http://mde.tw/cad2020/downloads/Solidworks%20%E9%9B%B6%E4%BB%B6%E7%B9%AA%E5%9C%96%E7%B7%B4%E7%BF%921.pdf">Solidworks 零件繪圖練習1.pdf</a>所繪製的零件, 透過編輯器更改所需的尺寸, 有64種變化</p>
 <p><img alt="" height="960" src="/images/參數6.JPG" width="1706"/></p>
 <h2>參數</h2>
@@ -227,7 +227,16 @@
 <p><img alt="" height="582" src="/images/參數13.jpg" width="1258"/></p>
 <p>iLogic規則</p>
 <p><img caption="false" height="1080" src="/images/參數12.jpg" width="1920"/></p>
-<h2>應用</h2>
+<pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">If Style = 2 Then 
+ Leight = 85
+Width = 35 
+ Height = 45
+d3 = 0 
+ d12 = 15
+volume = iProperties.Volume 
+ Volume = volume 
+ Parameter.UpdateAfterChange = True
+End If</pre><h2>應用</h2>
 <p>參考<a href="http://mde.tw/cad2020/downloads/Solidworks%20%E9%9B%B6%E4%BB%B6%E7%B9%AA%E5%9C%96%E7%B7%B4%E7%BF%921.pdf">Solidworks 零件繪圖練習1.pdf</a>, 繪製Lesson1</p>
 <p><img alt="" height="424" src="/images/參數6.JPG" width="754"/></p>
 <p>到DartPad編譯, 使用大一上"計算機程式"課程所教 "<strong>for 迴圈"</strong></p>
