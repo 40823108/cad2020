@@ -176,7 +176,27 @@
 <p>如何使用API控制Solidworks與Inevntor繪製模型, 並同時將各模型之體積與圖片匯入.html檔, 使其能在網頁中瀏覽各模型之變化</p>
 <p><img alt="" height="619" src="/images/api.gif" width="1100"/></p>
 <h2>W7</h2>
-<p>.....</p><h1>Inventor API</h1>
+<h4><strong>利用SciTE編輯器類解譯ANSI C程式並, 建立ANSI C程式環境</strong></h4>
+<p>下載<a href="https://drive.google.com/file/d/1BdAeRF8RmekFqeYp_4gVHV6Bmcej7buR/view">cad2020_w7_tcc_gnuplot.7z</a>解壓縮至自己的資料夾</p>
+<p><img caption="false" height="833" src="/images/tcc-1.JPG" width="1326"/></p>
+<p>將gnuplot, tcc資料夾, wqy-microhei.tcc文字檔剪下--&gt;data資料夾下與tmp同層</p>
+<p><img alt="" height="834" src="/images/tcc-2.JPG" width="1329"/></p>
+<p>修改start.abt路徑</p>
+<p><img alt="" height="733" src="/images/tcc-3.JPG" width="562"/></p>
+<pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">set path_git=%Disk%:\Portablegit\PortableGit\bin;
+set path_tcc=%Disk%:\tcc\;
+set path_gnuplot=%Disk%:\gnuplot\bin;
+
+path=%Disk%:;%path_python%;%path_git%;%path_tcc%;%path_gnuplot%;</pre>
+<p>使用<span>下載的</span><a href="https://drive.google.com/file/d/1BdAeRF8RmekFqeYp_4gVHV6Bmcej7buR/view">cad2020_w7_tcc_gnuplot.7z</a>裡的wscite資料夾將cpp.properties批次檔複製出</p>
+<p><img alt="" height="834" src="/images/tcc-4.JPG" width="1327"/></p>
+<p>放置fall2020/cad2020/data/wscite下覆蓋原有的<span>cpp.properties批次檔</span></p>
+<p><img alt="" height="836" src="/images/tcc-5.JPG" width="1330"/></p>
+<p>即可執行下列程式</p>
+<p><img alt="" height="734" src="/images/tcc-8.JPG" width="566"/></p>
+<p><img alt="" height="833" src="/images/tcc-6.JPG" width="1327"/></p>
+<p><img alt="" height="837" src="/images/tcc-7.JPG" width="1553"/></p>
+<p></p><h1>Inventor API</h1>
 <p>此為參考<a href="http://mde.tw/cad2020/downloads/Solidworks%20%E9%9B%B6%E4%BB%B6%E7%B9%AA%E5%9C%96%E7%B7%B4%E7%BF%921.pdf">Solidworks 零件繪圖練習1.pdf</a>所繪製的零件, 透過編輯器更改所需的尺寸, 有64種變化</p>
 <p><img alt="" height="960" src="/images/api.gif" width="1706"/></p>
 <h2>參數</h2>
