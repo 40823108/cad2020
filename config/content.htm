@@ -202,7 +202,7 @@ path=%Disk%:;%path_python%;%path_git%;%path_tcc%;%path_gnuplot%;</pre>
 <p style="text-align: center;"><span><img alt="" height="314" src="/images/Pyslvs-1.png" width="440"/></span></p>
 <p style="text-align: center;"><span><img alt="" height="722" src="/images/Pyslvs-gif.gif" width="930"/></span></p>
 <h2>W9</h2>
-<p>期中考周 , 到課打分數<br/><img alt="" height="533" src="/images/tcc-9.JPG" width="800"/></p><h1>Inventor API</h1>
+<p>期中考週 , 到課打分數<br/><img alt="" height="533" src="/images/tcc-9.JPG" width="800"/></p><h1>Inventor API</h1>
 <p>此為參考<a href="http://mde.tw/cad2020/downloads/Solidworks%20%E9%9B%B6%E4%BB%B6%E7%B9%AA%E5%9C%96%E7%B7%B4%E7%BF%921.pdf">Solidworks 零件繪圖練習1.pdf</a>所繪製的零件, 透過編輯器更改所需的尺寸, 有64種變化</p>
 <p><img alt="" height="960" src="/images/api.gif" width="1706"/></p>
 <h2>參數</h2>
@@ -226,13 +226,12 @@ path=%Disk%:;%path_python%;%path_git%;%path_tcc%;%path_gnuplot%;</pre>
 <p>最常使用的就是直接將"常數"填入使其做計算,也可以直接鍵入方程式, 最後由標稱值欄位顯示結果</p>
 <p><b>標稱值:</b></p>
 <p>如果方程式欄位中為"常數"此欄會直接顯示常數<br/>如果方程式欄位中為"方程式"此欄會將方程式做計算最後顯示結果</p>
-<p><strong>公釐:</strong></p>
+<p><strong>公差:</strong></p>
 <p style="text-align: left;"><img alt="" height="452" src="/images/參數5.JPG" width="1031"/><br/><br/>紅色"負號"表示使用下限作為模型值<br/>藍色"加號"表示使用上限作為模型值<br/>綠色"三角"表示用中間值作為模型值<br/>黃色"圓環"表示用標稱值作為模型值</p>
 <p><strong>模型值:</strong></p>
 <p>標稱值加上公差設定的計算結果, 惠珍的套用到模型中改變尺寸</p>
 <p><strong>註釋:</strong></p>
-<p>可以加上參數的用途說明</p>
-<h2>ilogic Basic</h2>
+<p>可以加上參數的用途說明</p><h2>ilogic Basic</h2>
 <p><strong>參數與表單:</strong></p>
 <p>使用Inventor iLogic可以從"參數指定"這個方向來看, 在功能表上的"Fx"字樣的按鈕點選進入"參數表", 如下圖:</p>
 <p><strong><img alt="" height="351" src="/images/參數7.JPG" width="731"/></strong></p>
@@ -241,15 +240,14 @@ path=%Disk%:;%path_python%;%path_git%;%path_tcc%;%path_gnuplot%;</pre>
 <p>iLogic功能是透過簡單的參數指定語法來快速連結資料, 可以讓組合中的不同元件的幾何特徵參數產生關聯, 為了方便操作可以自訂表單用來調整與顯示控制</p>
 <p><img alt="" height="619" src="/images/api.gif" width="1100"/></p>
 <p>要進行iLogic前要先定義好需要的關鍵尺寸：長 、寬 、高，三個尺寸條件，<br/>可以在既有的最上層組合中用英文或中文定義名稱，如下圖示：<img alt="" height="584" src="/images/參數8.JPG" width="1259"/></p>
-<p>要呼叫出iLogic功能，請點選"管理" - "iLogic" - "iLogic瀏覽器"，如下圖示：</p>
+<p>要呼叫出iLogic功能，請點選"管理" - "iLogic" - "iLogic瀏覽器"，如上圖示：</p>
 <p><img alt="" height="355" src="/images/參數9.JPG" width="1145"/></p>
 <p>在原本的瀏覽器旁邊就會出現"iLogic"瀏覽器, 如下圖:</p>
 <p>下方紅框處就是編譯模型鍵入程式碼的區域, 瀏覽器中的選項皆為程式碼點選後即可鍵入, 變數和名稱需自行更改</p>
 <p><img alt="" height="982" src="/images/參數10.JPG" width="1561"/></p>
 <p>表單是為了方便使用者快速更改, 如下圖:</p>
 <p><img alt="" height="956" src="/images/參數11.JPG" width="1712"/></p>
-<p>將所需資料拖入右方"標示"瀏覽器中, 即可生成表單, 表單可以自行定義樣式於下方工具箱與性質瀏覽器中做更改與修正</p>
-<h2>iLogic程式基礎概念</h2>
+<p>將所需資料拖入右方"標示"瀏覽器中, 即可生成表單, 表單可以自行定義樣式於下方工具箱與性質瀏覽器中做更改與修正</p><h2>iLogic程式基礎概念</h2>
 <p>If Then ElseIf 跟 Case Select Case</p>
 <p>請參考<a href="https://help.autodesk.com/view/INVNTOR/2021/CHT/?guid=GUID-4D3AE24D-A418-4E43-AE05-B3A7918ABBA7">Inventor 20121 說明: 關於iLogic中的條件陳述式</a></p>
 <p>以下為iLogic應用</p>
@@ -307,3 +305,6 @@ End If</pre>
 <p>即可使用表單編輯</p>
 <p><img alt="" height="956" src="/images/參數11.JPG" width="1712"/></p>
 <p><img alt="" height="619" src="/images/api.gif" width="1100"/></p>
+<h1>期末課堂內容</h1>
+<h2>W10</h2>
+<p>123</p>
