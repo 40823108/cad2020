@@ -241,14 +241,13 @@ path=%Disk%:;%path_python%;%path_git%;%path_tcc%;%path_gnuplot%;</pre>
 <p>可以加上參數的用途說明</p>
 <h2>ilogic basic</h2>
 <p><strong>參數與表單:</strong></p>
-<p>使用Inventor iLogic可以從"參數指定"這個方向來看, 在功能表上的"Fx"字樣的按鈕點選進入"參數表", 如下圖:</p>
+<p>使用Inventor iLogic可從"參數指定"這個方向來看, 在功能表上的"Fx"字樣的按鈕點選進入"參數表", 如下圖:</p>
 <p><strong><img alt="" height="351" src="/images/參數7.JPG" width="731"/></strong></p>
 <p><strong><img alt="" height="584" src="/images/參數8.JPG" width="1259"/></strong></p>
-<p><strong></strong></p>
 <p>iLogic功能是透過簡單的參數指定語法來快速連結資料, 可以讓組合中的不同元件的幾何特徵參數產生關聯, 為了方便操作可以自訂表單用來調整與顯示控制</p>
 <p><img alt="" height="619" src="/images/api.gif" width="1100"/></p>
 <p>要進行iLogic前要先定義好需要的關鍵尺寸：長 、寬 、高，三個尺寸條件，<br/>可以在既有的最上層組合中用英文或中文定義名稱，如下圖示：<img alt="" height="584" src="/images/參數8.JPG" width="1259"/></p>
-<p>要呼叫出iLogic功能，請點選"管理" - "iLogic" - "iLogic瀏覽器"，如上圖示：</p>
+<p>要呼叫出iLogic功能，請點選"管理" - "iLogic" - "iLogic瀏覽器"，如下圖：</p>
 <p><img alt="" height="355" src="/images/參數9.JPG" width="1145"/></p>
 <p>在原本的瀏覽器旁邊就會出現"iLogic"瀏覽器, 如下圖:</p>
 <p>下方紅框處就是編譯模型鍵入程式碼的區域, 瀏覽器中的選項皆為程式碼點選後即可鍵入, 變數和名稱需自行更改</p>
@@ -358,23 +357,23 @@ End If</pre>
 <h2>W12 meeting</h2>
 <h1>Coppeliasim basic</h1>
 <p><img alt="" height="851" src="/images/coppeliasim-5.gif" width="1692"/></p>
-<h2>匯入物件</h2>
+<h2>Import objects</h2>
 <p>1.利用3D繪圖軟體,繪製所需物件,並將其匯出成STL檔案,<span>可先將座標位置定好再做匯出</span></p>
 <p><span>2.開啟coppeliasim匯入物件,步驟為: File--&gt;import--&gt;Mesh...</span></p>
 <p><img alt="" height="548" src="/images/coppeliasim-7.jpg" width="411"/></p>
 <p><span></span></p>
 <p><span><img alt="" height="447" src="/images/coppeliasim-2.jpg" width="758"/></span></p>
-<h2>分解物件</h2>
+<h2>Divide object</h2>
 <p>1.因匯入的STL檔案為單一物件,如果為組合圖所有零件匯以同一物件做匯入,必須將其作分解使能的道所需零件數量</p>
 <p>2.分解物件步驟為: <span>Edit--&gt;Grouping/Merging--&gt;Divide selected shapes </span></p>
 <p><img alt="" height="493" src="/images/coppeliasim-1.jpg" width="798"/></p>
-<h2>外觀設定</h2>
+<h2>Appearance setting</h2>
 <p>1.可使用內部彈出視窗(Scene Object Properties)修改每個物件的顏色,需先選中需染色之物件在點選左方工具列中放大鏡的圖示即可使用內部彈出視窗</p>
 <p>2.修改顏色步驟為:  選中之物件--&gt;<span>Scene Object Properties--&gt;shape--&gt;Adjust color--&gt;Ambient/diffuse component--&gt;RGB  or  HSL--&gt;Apply to selection</span></p>
 <p><img alt="" height="483" src="/images/coppeliasim-8.jpg" width="887"/></p>
 <p><img alt="" height="566" src="/images/coppeliasim-3.jpg" width="805"/></p>
 <p><img alt="" height="631" src="/images/coppeliasim-4.jpg" width="970"/></p>
-<h2>馬達設定</h2>
+<h2>Joint settings</h2>
 <p>1.為了讓物件可以旋轉,所以需要加入joint</p>
 <p>2.點選左上的 Add--&gt;joint--&gt;Revolute 這樣就能叫出一個圓柱狀的軸，並生成在座標 0.0.0. 上</p>
 <p>3.加入joint步驟為:  空白處滑鼠右鍵--&gt;<span>Add--&gt;joint--&gt;Revolute</span></p>
@@ -382,7 +381,7 @@ End If</pre>
 <p>5.新增完joint後,因物件與其無關聯所以須使用上方工具欄中Object/ltem Translation/Position--&gt;<span>Position(移動)指令,使物件與馬達位置相同後,再使用Object/ltem Translation/Position--&gt;<span>Position(旋轉)指令使馬達與物件軸向相同</span></span></p>
 <p><span><span><img alt="" height="520" src="/images/coppeliasim-10.jpg" width="868"/></span></span></p>
 <p><span><span><img alt="" height="597" src="/images/coppeliasim-9.jpg" width="682"/></span></span></p>
-<h2>編排物件</h2>
+<h2>Orchestration objects</h2>
 <p>1.再匯入的STL檔案中,將物件做分割後每個物件之間是毫無關聯的,所以如果為轉軸或關節處匯無法轉動</p>
 <p>2.在左方模型瀏覽器中,將所需之物件拖拉編排,相關連之物件需為同一數列,依裝配之順序將物件做排列,無關聯之物件無需做排列,只需依需求打開動態屬性</p>
 <p>3.排列方式用下方圖片做參考:</p>
